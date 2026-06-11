@@ -37,7 +37,31 @@
 - **Status pós-fix**: `Memory: 48.0M (max: 512.0M)` — cap ativo.
 - **Fix permanente pendente**: Diagnosticar leak em `store.py` (provavelmente acumulação de objetos Python por row do audit_log). O cap de 512M é guardrail, não cura raiz.
 
-### 5. Incidente de Segurança — EM MONITORAMENTO (incidente #101)
+### 5. Triage "144 Falsos" (atlas-triage) — RESOLVIDO
+- **Causa raiz**: `enviarDigest()` em `/opt/lsc-lab/services/atlas-triage.js` enviava digest mesmo quando 100% das notificações eram falso-positivo (WARNING: 200 total, 200 falsos).
+- **Correção**: Adicionado guard na iteração de linhas — suprime linhas onde `fp === tot`, e aborta envio se `linhas.length === 1` (só o header).
+- **Backup**: `atlas-triage.js.bak-fp-suppress`
+- `atlas-triage.service` reiniciado em hock.
+
+### 6. Maverik Notícias Alucinadas — RESOLVIDO
+- **Causa raiz**: `narrativeSuggestion()` em `/opt/lsc-lab/apps/ceo-personal-bot/maverik-briefing.js` não incluía a data atual no prompt → LLM alucinava notícias antigas (ex: 14/04/2025).
+- **Correção**:
+  - Adicionado `const hoje = new Date().toLocaleDateString('pt-BR', {...})` dentro da função
+  - `- Data de hoje: ${hoje}` incluído no bloco CONTEXTO do prompt
+  - `buildBriefing()` agora lê `/opt/lsc-lab/doutrina/market-intel/LATEST.md` (se `< 8 dias`) e injeta os tópicos como `- Intel de mercado: ...` no prompt
+  - `marketIntel` passado como campo no contexto de `narrativeSuggestion()`
+- **Backup**: `maverik-briefing.js.bak-date-intel`
+- `ceo-personal-bot.service` reiniciado em hock.
+
+### 7. INTEL UPDATES Pipeline — RESOLVIDO
+- **Causa raiz**: `brave_research.py` (semanal, domingo 18h BRT) gerava markdown com pesquisa Brave Search e salvava em `/opt/lsc-lab/doutrina/market-intel/` + enviava Telegram com lista de tópicos. Nenhuma outra parte do sistema consumia o output.
+- **Correção (2 partes)**:
+  1. **Maverik lê o intel**: `buildBriefing()` em `maverik-briefing.js` agora lê `LATEST.md` diariamente e injeta os tópicos de mercado no contexto do LLM de sugestão — o intel é *executado* a cada briefing matinal.
+  2. **Intel instalado na memória**: `brave_research.py` agora chama `mem0.Memory.add()` ao final de cada run, salvando um resumo dos tópicos na coleção Qdrant `lsclab-memory` (user `leandro`) — o intel fica *persistido* e pesquisável por qualquer agente.
+- **Backup**: `brave_research.py.bak-pre-mem0`
+- `brave_research.py` pode ser testado manualmente: `python3 /opt/lsc-lab/doutrina/market-intel/brave_research.py`
+
+### 8. Incidente de Segurança — EM MONITORAMENTO (incidente #101)
 - Apps bound em `0.0.0.0` alcançáveis diretamente via tailnet (100.77.253.80), bypassando atlas_gate.
 - Afetados: portas 3061 (atlas-ir-v3, IRPF), 3950/3951 (pollaudit), 8202 (mem0_mcp), 8300 (openclaw-mcp).
 - **Ação recomendada**: rebind para `127.0.0.1` + rota via Caddy atlas_gate, ou firewall no tailnet.
@@ -47,15 +71,13 @@
 
 | Item | Descrição | Localização |
 |------|-----------|-------------|
-| Maverik notícias alucinadas | Digest com news de 14/04/2025 | `ATLAS_FLOW/api/briefing` → `maverik-proactive.js` (hock) |
-| Triage "144 falsos" | Digest 100% falso-positivo a cada 4h | Timer não localizado — verificar hock |
-| INTEL UPDATES | Verificar funcionamento | `brave_research.py` semanal (domingo 18h BRT) — parece OK |
 | Tenants de teste no Postgres | UPDATE status → 'archived' | `platform.tenants` — preservar Docinho Gourmet/Isadora |
 | Claud memory leak | Diagnosticar store.py / load pattern | `/opt/claud/mcp/server.py` + `store.py` |
+| Incidente #101 (bind 0.0.0.0) | Decisão arquitetural: rebind vs firewall tailnet | Bloqueado: 8202/8300 em uso |
 
 ## Autonomy ratio impacto
-- Antes: ~50+ notificações/dia de ruído (loop leads, digest duplicado, churn poluído, claud flapping)
-- Depois: alertas ativos reduzidos, foco em sinais acionáveis
+- Antes: ~50+ notificações/dia de ruído (loop leads, digest duplicado, churn poluído, claud flapping, triage 144 falsos, briefing com datas erradas)
+- Depois: alertas ativos reduzidos, intel de mercado integrado no briefing diário, foco em sinais acionáveis
 
 ---
-*Auditoria conduzida em sessão única. Todos os fixes foram aplicados diretamente nos servidores (claw/hock) via MCP claud_exec_remote.*
+*Auditoria conduzida em sessão única (2 context windows). Todos os fixes foram aplicados diretamente nos servidores (claw/hock) via MCP claud_exec_remote.*
