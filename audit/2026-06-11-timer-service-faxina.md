@@ -67,17 +67,22 @@
 - **Ação recomendada**: rebind para `127.0.0.1` + rota via Caddy atlas_gate, ou firewall no tailnet.
 - **Bloqueio**: rebind de 8202/8300 derrubaria MCPs em uso — decisão arquitetural necessária.
 
+### 9. Tenants de Teste no Postgres — RESOLVIDO
+- **Correção**: `UPDATE platform.tenants SET status='archived'` nas 9 entradas de teste (Debug, Debug Console, Smoke Test, persona-tester ×5, qa-teste).
+- **Preservados como `active`**: Docinho Gourmet (confirmado), Dr. Roberto Mendes, Henrique Caetano, Natália Ferreira Ayres, Maurilio Jr. Miranda, Rabelo Tacografos, LSC Lab.
+- **Resultado**: `UPDATE 9` — filtros do billing.js agora têm consistência com o estado do DB.
+
 ## Pendentes da faxina
 
 | Item | Descrição | Localização |
 |------|-----------|-------------|
-| Tenants de teste no Postgres | UPDATE status → 'archived' | `platform.tenants` — preservar Docinho Gourmet/Isadora |
 | Claud memory leak | Diagnosticar store.py / load pattern | `/opt/claud/mcp/server.py` + `store.py` |
 | Incidente #101 (bind 0.0.0.0) | Decisão arquitetural: rebind vs firewall tailnet | Bloqueado: 8202/8300 em uso |
 
 ## Autonomy ratio impacto
 - Antes: ~50+ notificações/dia de ruído (loop leads, digest duplicado, churn poluído, claud flapping, triage 144 falsos, briefing com datas erradas)
 - Depois: alertas ativos reduzidos, intel de mercado integrado no briefing diário, foco em sinais acionáveis
+- **9/9 itens operacionais resolvidos** (2 pendentes são arquiteturais: memory leak root cause, bind 0.0.0.0)
 
 ---
-*Auditoria conduzida em sessão única (2 context windows). Todos os fixes foram aplicados diretamente nos servidores (claw/hock) via MCP claud_exec_remote.*
+*Auditoria conduzida em 2 context windows. Todos os fixes foram aplicados diretamente nos servidores (claw/hock) via MCP claud_exec_remote.*
