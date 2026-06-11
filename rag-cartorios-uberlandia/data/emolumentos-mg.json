@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "titulo": "Emolumentos extrajudiciais de Minas Gerais",
+    "norma_vigente": "Portaria nº 8.664/CGJ/2025 (TJMG)",
+    "base_legal": "Lei Estadual nº 15.424/2004",
+    "vigencia": "2026-01-01",
+    "indexador": { "nome": "UFEMG", "ano": 2026, "valor_reais": 5.7899, "fonte": "Resolução SEF-MG nº 5.969/2025" },
+    "composicao_valor_final": "emolumentos + tfj (Taxa de Fiscalização Judiciária)",
+    "observacao_recompe": "Recompe (7% dos emolumentos) é repasse interno da serventia; NÃO é cobrado do cidadão.",
+    "fonte_pdf": "https://www8.tjmg.jus.br/institucional/at/pdf/cpo86642025.pdf",
+    "moeda": "BRL"
+  },
+  "reducoes": [
+    { "situacao": "imovel financiado por entidade financeira/governo", "efeito": "-50% no valor final", "nota": "XV" },
+    { "situacao": "imovel SFI/SFH/cooperativa/consorcio", "efeito": "-80% no valor final", "nota": "XXIII (Tabela 1)" },
+    { "situacao": "promessa de compra e venda/cessao/permuta (registro)", "efeito": "-50% no valor final", "nota": "XV (Tabela 4)" },
+    { "situacao": "usufruto", "efeito": "base = 1/3 do valor do imovel", "nota": "X" },
+    { "situacao": "servidao", "efeito": "base = 20% do valor", "nota": "XIV" }
+  ],
+  "escritura_e_registro_conteudo_financeiro": {
+    "descricao": "Faixas por valor do negócio. Vale para escritura (Tabela 1, item 4.b) E registro de compra e venda (Tabela 4, item 5.e).",
+    "faixas": [
+      { "min": 0.00, "max": 1400.00, "emolumentos": 159.20, "tfj": 61.35, "final": 220.55 },
+      { "min": 1400.01, "max": 2720.00, "emolumentos": 259.68, "tfj": 100.08, "final": 359.76 },
+      { "min": 2720.01, "max": 5440.00, "emolumentos": 376.34, "tfj": 145.01, "final": 521.35 },
+      { "min": 5440.01, "max": 7000.00, "emolumentos": 520.99, "tfj": 200.76, "final": 721.75 },
+      { "min": 7000.01, "max": 14000.00, "emolumentos": 694.78, "tfj": 267.69, "final": 962.47 },
+      { "min": 14000.01, "max": 28000.00, "emolumentos": 897.58, "tfj": 345.89, "final": 1243.47 },
+      { "min": 28000.01, "max": 42000.00, "emolumentos": 1129.02, "tfj": 435.05, "final": 1564.07 },
+      { "min": 42000.01, "max": 56000.00, "emolumentos": 1389.81, "tfj": 535.50, "final": 1925.31 },
+      { "min": 56000.01, "max": 70000.00, "emolumentos": 1679.40, "tfj": 647.11, "final": 2326.51 },
+      { "min": 70000.01, "max": 105000.00, "emolumentos": 2113.64, "tfj": 814.42, "final": 2928.06 },
+      { "min": 105000.01, "max": 140000.00, "emolumentos": 2540.87, "tfj": 1180.65, "final": 3721.52 },
+      { "min": 140000.01, "max": 175000.00, "emolumentos": 2717.08, "tfj": 1262.61, "final": 3979.69 },
+      { "min": 175000.01, "max": 210000.00, "emolumentos": 2893.66, "tfj": 1344.66, "final": 4238.32 },
+      { "min": 210000.01, "max": 280000.00, "emolumentos": 3070.72, "tfj": 1701.35, "final": 4772.07 },
+      { "min": 280000.01, "max": 350000.00, "emolumentos": 3155.22, "tfj": 1748.31, "final": 4903.53 },
+      { "min": 350000.01, "max": 420000.00, "emolumentos": 3240.20, "tfj": 1795.39, "final": 5035.59 },
+      { "min": 420000.01, "max": 560000.00, "emolumentos": 3325.70, "tfj": 2197.44, "final": 5523.14 },
+      { "min": 560000.01, "max": 700000.00, "emolumentos": 3508.36, "tfj": 2318.34, "final": 5826.70 },
+      { "min": 700000.01, "max": 840000.00, "emolumentos": 3691.51, "tfj": 2439.36, "final": 6130.87 },
+      { "min": 840000.01, "max": 1120000.00, "emolumentos": 3875.31, "tfj": 2991.22, "final": 6866.53 },
+      { "min": 1120000.01, "max": 1400000.00, "emolumentos": 4197.56, "tfj": 3240.08, "final": 7437.64 },
+      { "min": 1400000.01, "max": 1680000.00, "emolumentos": 4520.42, "tfj": 3489.30, "final": 8009.72 },
+      { "min": 1680000.01, "max": 3200000.00, "emolumentos": 4844.02, "tfj": 3738.95, "final": 8582.97 }
+    ],
+    "acima_de_3200000": {
+      "nota": "XXV (notas) / XVII (registro)",
+      "regra": "A cada faixa de R$ 500.000,00 (ou fração, até 100 faixas): +R$ 3.289,90 na 1ª faixa e +R$ 2.193,27 nas subsequentes sobre emolumentos brutos; 40% destinados ao art. 45-A; TFJ fixa de R$ 4.673,83."
+    }
+  },
+  "atos_notas_valor_fixo": [
+    { "ato": "escritura sem conteúdo financeiro", "final": 72.90 },
+    { "ato": "procuração genérica (por outorgante)", "final": 68.94 },
+    { "ato": "procuração previdenciária/assistência social", "final": 36.61 },
+    { "ato": "procuração com conteúdo financeiro", "final": 218.41 },
+    { "ato": "substabelecimento", "final": 45.96 },
+    { "ato": "reconhecimento de firma (por assinatura)", "final": 11.21 },
+    { "ato": "autenticação de cópia (por folha)", "final": 11.21 },
+    { "ato": "autenticação eletrônica/digital", "final": 12.99 },
+    { "ato": "ata notarial (até 2 folhas)", "final": 218.42 },
+    { "ato": "ata notarial (folha adicional)", "final": 11.21 },
+    { "ato": "testamento público", "final": 437.24 },
+    { "ato": "revogação de testamento", "final": 218.63 },
+    { "ato": "aprovação de testamento cerrado", "final": 655.70 },
+    { "ato": "pacto antenupcial / divórcio / união estável", "final": 655.68 },
+    { "ato": "convenção de condomínio", "final": 174.68 }
+  ],
+  "atos_registro_imoveis_valor_fixo": [
+    { "ato": "registro sem conteúdo financeiro", "final": 34.39 },
+    { "ato": "abertura/cancelamento de matrícula", "final": 91.25 },
+    { "ato": "prenotação", "final": 63.83 },
+    { "ato": "exame e cálculo", "final": 106.89 },
+    { "ato": "certidão de situação jurídica atualizada", "final": 159.15 },
+    { "ato": "usucapião extrajudicial — processamento", "final": 3113.56, "obs": "acresce registro pelo item 5.e" },
+    { "ato": "averbação padrão (cédula hipotecária, quitação, alteração de cláusula)", "final": 36.27 },
+    { "ato": "intimação (fiduciante/promissário, por pessoa)", "final": 220.54 }
+  ],
+  "cancelamento_onus_por_faixa": [
+    { "min": 0.00, "max": 1400.00, "final": 36.27 },
+    { "min": 1400.01, "max": 5000.00, "final": 43.55 },
+    { "min": 5000.01, "max": 20000.00, "final": 87.14 },
+    { "min": 20000.01, "max": null, "final": 145.25 }
+  ],
+  "penhora_arresto_por_faixa": [
+    { "min": 0.00, "max": 1400.00, "final": 24.87 },
+    { "min": 1400.01, "max": 5000.00, "final": 29.83 },
+    { "min": 5000.01, "max": 20000.00, "final": 59.69 },
+    { "min": 20000.01, "max": null, "final": 99.49 }
+  ],
+  "registro_civil": [
+    { "ato": "registro de nascimento/óbito + 1ª certidão", "final": 0.00, "obs": "gratuito - Lei 9.534/97" },
+    { "ato": "habilitação para casamento", "final": 360.69 },
+    { "ato": "assento de casamento", "final": 94.16 },
+    { "ato": "certidão em resumo/negativa", "final": 63.83 },
+    { "ato": "certidão de inteiro teor", "final": 127.64 },
+    { "ato": "termo declaratório de união estável", "final": 655.69 }
+  ]
+}

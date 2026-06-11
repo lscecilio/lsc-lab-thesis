@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "titulo": "Catálogo de fontes citadas no corpus RAG",
+    "atualizado_em": "2026-06-11",
+    "nota": "Vários portais oficiais (Planalto, CNJ, Prefeitura de Uberlândia) bloquearam acesso automatizado durante a coleta (HTTP 403/503); os textos foram confirmados em fontes oficiais alternativas (Câmara, Senado, atos.cnj.jus.br, leis municipais). Recomenda-se revalidação manual antes de citação textual em peça/tese."
+  },
+  "oficiais_federais": [
+    { "nome": "Lei 6.015/1973 (Registros Públicos)", "url": "https://www.planalto.gov.br/ccivil_03/leis/l6015consolidado.htm" },
+    { "nome": "Lei 8.935/1994 (Notários e Registradores)", "url": "https://www.planalto.gov.br/ccivil_03/leis/l8935.htm" },
+    { "nome": "Lei 14.382/2022 (SERP)", "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14382.htm" },
+    { "nome": "Lei 13.097/2015 (concentração na matrícula)", "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13097.htm" },
+    { "nome": "Lei 13.465/2017 (REURB)", "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13465.htm" },
+    { "nome": "Lei 14.711/2023 (Marco Legal das Garantias)", "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14711.htm" },
+    { "nome": "Lei 11.977/2009 (registro eletrônico/PMCMV)", "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l11977.htm" },
+    { "nome": "Lei 9.492/1997 (protesto)", "url": "https://www.planalto.gov.br/ccivil_03/leis/l9492.htm" },
+    { "nome": "Código Civil (Lei 10.406/2002)", "url": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm" },
+    { "nome": "Provimento CNJ 149/2023 (Código Nacional de Normas - Extrajudicial)", "url": "https://atos.cnj.jus.br/atos/detalhar/5243" },
+    { "nome": "Provimento CNJ 139/2023 (SERP)", "url": "https://atos.cnj.jus.br/atos/detalhar/4921" },
+    { "nome": "Resolução CNJ 35/2007 (inventário/divórcio extrajudicial)", "url": "https://atos.cnj.jus.br/atos/detalhar/179" },
+    { "nome": "Resolução CNJ 571/2024 (menores/incapazes)", "url": "https://atos.cnj.jus.br/atos/detalhar/5705" }
+  ],
+  "oficiais_mg": [
+    { "nome": "Lei 15.424/2004 (emolumentos MG) - ALMG", "url": "https://www.almg.gov.br/legislacao-mineira/texto/LEI/15424/2004/?cons=1" },
+    { "nome": "Portaria 8.664/CGJ/2025 (tabela emolumentos 2026) - PDF", "url": "https://www8.tjmg.jus.br/institucional/at/pdf/cpo86642025.pdf" },
+    { "nome": "Tabela de emolumentos 2026 - TJMG", "url": "https://www.tjmg.jus.br/portal-tjmg/servicos-notariais-e-de-registro/tabela-de-emolumentos.htm" },
+    { "nome": "Provimento Conjunto 142/2025 (Código de Normas MG)", "url": "https://serjus.com.br/arqdoc/PROVIMENTO%20CONJUNTO%20N%C2%BA%20142_2025.pdf" },
+    { "nome": "Lei 14.941/2003 (ITCD MG) - ALMG", "url": "https://www.almg.gov.br/legislacao-mineira/texto/LEI/14941/2003/?cons=1" },
+    { "nome": "ITCD - SEF/MG", "url": "https://www.fazenda.mg.gov.br/empresas/impostos/itcd/informacoes.html" },
+    { "nome": "UFEMG - SEF/MG", "url": "https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/resolucoes/ufemg.html" }
+  ],
+  "oficiais_uberlandia": [
+    { "nome": "Lei 4.871/1989 (ITBI) - PDF e-ITBI", "url": "https://eitbi.uberlandia.mg.gov.br/assets/PDF/Lei-ordinaria-4871.pdf" },
+    { "nome": "Sistema e-ITBI", "url": "https://eitbi.uberlandia.mg.gov.br/" },
+    { "nome": "ITBI - Secretaria de Finanças", "url": "https://www.uberlandia.mg.gov.br/prefeitura/secretarias/financas/itbi/" },
+    { "nome": "Regularização Fundiária (REURB)", "url": "https://www.uberlandia.mg.gov.br/prefeitura/secretarias/planejamento-urbano/regularizacao-fundiaria/" }
+  ],
+  "cartorios_e_entidades": [
+    { "nome": "CNJ Justiça Aberta (validação de serventias)", "url": "https://justicaaberta.cnj.jus.br/" },
+    { "nome": "2º RI Uberlândia", "url": "https://www.2riuberlandia.com.br/" },
+    { "nome": "Registro Civil Uberlândia (sede)", "url": "https://www.registrociviludi.com.br/" },
+    { "nome": "1º RTD Uberlândia", "url": "https://1rtduberlandia.com.br/" },
+    { "nome": "WR Protestos (1º Protesto)", "url": "https://www.wrprotestos.com.br/" },
+    { "nome": "Colégio Notarial do Brasil", "url": "https://www.notariado.org.br/" },
+    { "nome": "CNB-MG", "url": "https://cnbmg.org.br/" },
+    { "nome": "ANOREG", "url": "https://www.anoreg.org.br/" },
+    { "nome": "IRIB", "url": "https://www.irib.org.br/" },
+    { "nome": "Registro de Imóveis do Brasil / ONR", "url": "https://www.registrodeimoveis.org.br/" },
+    { "nome": "CENSEC (testamentos)", "url": "https://www.censec.org.br/" }
+  ]
+}

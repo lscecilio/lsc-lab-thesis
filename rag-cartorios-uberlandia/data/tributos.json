@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "titulo": "Tributos sobre transmissão de imóveis - Uberlândia/MG",
+    "atualizado_em": "2026-06-11",
+    "ufemg_2026": 5.7899
+  },
+  "itbi_uberlandia": {
+    "tipo": "municipal",
+    "lei": "Lei Ordinária 4.871/1989 (alterada pela LC 786/2025)",
+    "fato_gerador": "transmissão onerosa inter vivos de imóvel/direitos reais",
+    "contribuinte": "comprador/adquirente",
+    "quando_paga": "antes da lavratura da escritura e do registro",
+    "base_calculo": "valor de mercado declarado pelo contribuinte (LC 786/2025, desvinculado do IPTU)",
+    "aliquotas": [
+      { "hipotese": "transmissão onerosa em geral (compra e venda)", "aliquota": 0.02 },
+      { "hipotese": "SFH - parte financiada (menor renda)", "aliquota": 0.005 },
+      { "hipotese": "SFH - valor restante", "aliquota": 0.02 },
+      { "hipotese": "demais transmissões/cessões", "aliquota": 0.04 }
+    ],
+    "bases_especificas": {
+      "dominio_util": "1/3 do valor venal",
+      "usufruto_uso_habitacao": "1/3 do valor",
+      "nua_propriedade": "2/3 do valor",
+      "arrematacao": "preco pago"
+    },
+    "imunidades": ["integralização de capital", "fusão/incorporação/extinção de PJ", "PJ de direito público/templos/educação/assistência social", "promessas de compra e venda"],
+    "ressalva_imunidade": "não se aplica a PJ com atividade preponderantemente imobiliária (>50% receita)",
+    "guia": "https://eitbi.uberlandia.mg.gov.br/"
+  },
+  "itcd_mg": {
+    "tipo": "estadual",
+    "lei": "Lei Estadual 14.941/2003 (Decreto 43.981/2005)",
+    "fato_gerador": "transmissão causa mortis (herança) e doação",
+    "aliquota": 0.05,
+    "observacao_aliquota": "alíquota única de 5% (art. 10); EC 132/2023 poderá tornar progressiva (até 8%) no futuro - aguardar lei estadual",
+    "desconto_causa_mortis": { "percentual": 0.15, "condicao": "pagamento em até 90 dias do óbito", "aliquota_efetiva": 0.0425 },
+    "base_calculo": "valor de mercado na data do fato gerador (em UFEMG)",
+    "isencoes": [
+      { "hipotese": "imóvel residencial causa mortis", "limite_ufemg": 40000, "condicao": "monte total até 48.000 UFEMG", "valor_aprox_2026_reais": 231596 },
+      { "hipotese": "doação", "limite_ufemg": 10000, "valor_aprox_2026_reais": 57899 }
+    ],
+    "prazos": {
+      "heranca": "180 dias do óbito (desconto 15% se até 90 dias)",
+      "doacao_escritura": "antes da lavratura",
+      "excedente_meacao_divorcio": "30 dias da sentença"
+    },
+    "exige_para_escritura": "Certidão de pagamento/desoneração de ITCD da SEF-MG",
+    "guia": "e-ITCD (SEF-MG)"
+  },
+  "laudemio": {
+    "aplica_em_uberlandia": false,
+    "motivo": "incide apenas em terrenos de marinha/foreiros da União no litoral; Uberlândia é interior"
+  }
+}
