@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "titulo": "Serventias extrajudiciais da comarca de Uberlândia/MG",
+    "atualizado_em": "2026-06-11",
+    "fonte_oficial": "CNJ Justiça Aberta (https://justicaaberta.cnj.jus.br/) - validar titulares e CNS",
+    "aviso": "Endereços/telefones/titulares compilados de sites oficiais e agregadores; itens 'verificar' não confirmados em fonte oficial. Vários cartórios migraram para o Pátio Sabiá (Av. Anselmo Alves dos Santos, 1111, Tibery)."
+  },
+  "resumo": {
+    "registro_imoveis": 2,
+    "tabelionato_notas": 3,
+    "registro_civil_pn_sede": 1,
+    "rtd_rcpj": 1,
+    "tabelionato_protesto_ativo": 1,
+    "tabelionato_protesto_vago": 2,
+    "cartorios_distritais": 4,
+    "total_ativo": 12,
+    "total_vago": 2,
+    "total_serventias": 14
+  },
+  "serventias": [
+    {
+      "tipo": "Registro de Imóveis",
+      "nome": "1º Ofício de Registro de Imóveis",
+      "cns": "03.213-6",
+      "circunscricao": "Zona B",
+      "titular": "Márcio Ribeiro Pereira (verificar)",
+      "endereco": "Av. João Pinheiro, 332 (ou 409 - verificar), Centro, CEP 38400-124, Uberlândia/MG",
+      "telefone": "(34) 3214-6233 / 3235-1234 / 3236-8342",
+      "horario": "seg-sex 9h-17h"
+    },
+    {
+      "tipo": "Registro de Imóveis",
+      "nome": "2º Ofício de Registro de Imóveis",
+      "cns": "03.257-3",
+      "circunscricao": "Zona A",
+      "titular": "Luiz Eugênio da Fonseca",
+      "endereco": "Av. João Pinheiro, 332, Centro, CEP 38400-124, Uberlândia/MG",
+      "telefone": "(34) 3235-1234 / 3236-8342 / 3236-4221",
+      "email": "atendimento@2riuberlandia.com.br",
+      "site": "https://www.2riuberlandia.com.br/",
+      "horario": "seg-sex 9h-17h"
+    },
+    {
+      "tipo": "Tabelionato de Notas",
+      "nome": "1º Ofício de Notas (Tabelionato Araújo)",
+      "cns": "06.149-9",
+      "titular": "Carlos Antônio de Araújo",
+      "endereco": "Av. Cesário Alvim, 913, Centro, CEP 38400-694, Uberlândia/MG",
+      "telefone": "(34) 3221-9850 / 3221-9869 (verificar)",
+      "horario": "seg-sex 9h-17h"
+    },
+    {
+      "tipo": "Tabelionato de Notas",
+      "nome": "2º Tabelionato de Notas",
+      "cns": "05.799-2",
+      "titular": "Djalma Pizarro (verificar)",
+      "endereco": "Rua Machado de Assis, 685 OU Rua Cel. Antônio Alves Pereira, 850, Centro (verificar)",
+      "telefone": "(34) 3216-0252 / 3215-7048",
+      "horario": "seg-sex 9h-18h"
+    },
+    {
+      "tipo": "Tabelionato de Notas",
+      "nome": "3º Ofício de Notas",
+      "cns": "03.372-0",
+      "titular": "Eduardo Maurício Rodrigues da Cunha (verificar)",
+      "endereco": "Av. Getúlio Vargas, 1045, Centro, CEP 38400-299, Uberlândia/MG",
+      "telefone": "(34) 3236-8574 / 3236-9842",
+      "horario": "seg-sex 9h-17h"
+    },
+    {
+      "tipo": "Registro Civil das Pessoas Naturais",
+      "nome": "Serviço Registral das Pessoas Naturais de Uberlândia (Sede)",
+      "cns": "05.919-6",
+      "titular": "Feliciano de Oliveira Júnior",
+      "endereco": "Av. Anselmo Alves dos Santos, 1111, 4º andar, Pátio Sabiá, Tibery, CEP 38405-167, Uberlândia/MG",
+      "telefone": "(34) 3304-2992",
+      "whatsapp": "(34) 98409-0036 (dúvidas) / (34) 99205-9972 (casamentos)",
+      "email": "contato@registrociviludi.com.br",
+      "site": "https://www.registrociviludi.com.br/",
+      "horario": "seg-sex 9h-17h; sáb/dom/feriado 9h-12h (somente óbito)"
+    },
+    {
+      "tipo": "RTD/RCPJ",
+      "nome": "1º Cartório de RTD e Civil das Pessoas Jurídicas",
+      "cns": "03.996-6",
+      "titular": "não confirmado (verificar no CNJ)",
+      "endereco": "Av. Anselmo Alves dos Santos, 1111, 4º piso, Pátio Sabiá, Tibery, Uberlândia/MG",
+      "telefone": "(34) 3199-0711",
+      "whatsapp": "(34) 99977-7552",
+      "site": "https://1rtduberlandia.com.br/",
+      "horario": "seg-sex 9h-17h"
+    },
+    {
+      "tipo": "Tabelionato de Protesto",
+      "nome": "1º Tabelionato de Protesto de Títulos (WR Protestos)",
+      "cns": "05.552-5",
+      "titular": "Núbia Rezende Salomé",
+      "endereco": "Av. Anselmo Alves dos Santos, 1111, Pátio Sabiá, Piso 4, Tibery, CEP 38405-167, Uberlândia/MG",
+      "telefone": "(34) 2589-1000 / 2589-1090",
+      "email": "joao@wrprotestos.com.br",
+      "site": "https://www.wrprotestos.com.br/",
+      "horario": "seg-sex 9h-16h/17h",
+      "obs": "Única serventia de protesto em operação independente; responde em acumulação pelo 2º e 3º Protesto (vagos)"
+    },
+    {
+      "tipo": "Tabelionato de Protesto",
+      "nome": "2º Tabelionato de Protesto de Títulos",
+      "cns": "não provido",
+      "titular": "vago (sem titular provido)",
+      "status": "vago",
+      "obs": "Serventia oficialmente existente, porém vaga; serviço respondido em acumulação pelo 1º Protesto. Confirmar vago x extinto no CNJ/TJMG"
+    },
+    {
+      "tipo": "Tabelionato de Protesto",
+      "nome": "3º Tabelionato de Protesto de Títulos",
+      "cns": "não provido",
+      "titular": "vago (sem titular provido)",
+      "status": "vago",
+      "obs": "Serventia oficialmente existente, porém vaga; serviço respondido em acumulação pelo 1º Protesto. Confirmar vago x extinto no CNJ/TJMG"
+    },
+    {
+      "tipo": "Cartório Distrital (Notas + RCPN)",
+      "nome": "Cruzeiro dos Peixotos",
+      "cns": "03.428-0",
+      "titular": "Maria Otacília Knychala de Moraes (verificar)",
+      "endereco": "Av. José Camin, 270, Distrito de Cruzeiro dos Peixotos, Uberlândia/MG",
+      "telefone": "(34) 3244-9113"
+    },
+    {
+      "tipo": "Cartório Distrital (Notas + RCPN)",
+      "nome": "Martinésia",
+      "cns": "05.099-7",
+      "titular": "não confirmado",
+      "endereco": "Rua Aniceto Antônio da Silva, 10, Zona Rural, CEP 38439-800, Uberlândia/MG",
+      "telefone": "(34) 3244-5114",
+      "email": "cartoriomarti@hotmail.com"
+    },
+    {
+      "tipo": "Cartório Distrital (Notas + RCPN)",
+      "nome": "Miraporanga",
+      "cns": "14.605-0",
+      "titular": "Jovino Mustafa Cheik (verificar)",
+      "endereco": "Rua Cláudio José Bisinoto, 348, Morada Nova, Distrito de Miraporanga (verificar)",
+      "telefone": "(34) 2512-0065 (verificar)"
+    },
+    {
+      "tipo": "Cartório Distrital (Notas + RCPN)",
+      "nome": "Tapuirama",
+      "cns": "06.135-8",
+      "titular": "José Roberto de Fátima Rangel (verificar)",
+      "endereco": "Praça Said Jorge, 105, Centro do Distrito de Tapuirama, Uberlândia/MG",
+      "telefone": "(34) 3244-1173"
+    }
+  ]
+}
