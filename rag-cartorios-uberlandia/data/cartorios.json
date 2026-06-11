@@ -11,8 +11,11 @@
     "registro_civil_pn_sede": 1,
     "rtd_rcpj": 1,
     "tabelionato_protesto_ativo": 1,
+    "tabelionato_protesto_vago": 2,
     "cartorios_distritais": 4,
-    "total_ativo_aprox": 12
+    "total_ativo": 12,
+    "total_vago": 2,
+    "total_serventias": 14
   },
   "serventias": [
     {
@@ -97,7 +100,23 @@
       "email": "joao@wrprotestos.com.br",
       "site": "https://www.wrprotestos.com.br/",
       "horario": "seg-sex 9h-16h/17h",
-      "obs": "2º e 3º Protesto constam inativos"
+      "obs": "Única serventia de protesto em operação independente; responde em acumulação pelo 2º e 3º Protesto (vagos)"
+    },
+    {
+      "tipo": "Tabelionato de Protesto",
+      "nome": "2º Tabelionato de Protesto de Títulos",
+      "cns": "não provido",
+      "titular": "vago (sem titular provido)",
+      "status": "vago",
+      "obs": "Serventia oficialmente existente, porém vaga; serviço respondido em acumulação pelo 1º Protesto. Confirmar vago x extinto no CNJ/TJMG"
+    },
+    {
+      "tipo": "Tabelionato de Protesto",
+      "nome": "3º Tabelionato de Protesto de Títulos",
+      "cns": "não provido",
+      "titular": "vago (sem titular provido)",
+      "status": "vago",
+      "obs": "Serventia oficialmente existente, porém vaga; serviço respondido em acumulação pelo 1º Protesto. Confirmar vago x extinto no CNJ/TJMG"
     },
     {
       "tipo": "Cartório Distrital (Notas + RCPN)",

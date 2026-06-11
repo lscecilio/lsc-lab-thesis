@@ -25,18 +25,20 @@ atualizado_em: 2026-06-11
 > 1.111, Bairro Tibery) — fontes desatualizadas ainda mostram endereços antigos do Centro.
 > Dados marcados *(verificar)* vêm de fonte única/agregador e não foram confirmados em fonte oficial.
 
-## Resumo quantitativo (serventias ativas)
+## Resumo quantitativo (serventias da comarca)
 
-| Tipo de serventia | Qtd. ativa | Quais |
+| Tipo de serventia | Qtd. | Quais |
 |---|---|---|
 | Ofício de Registro de Imóveis | **2** | 1º RI (Zona B) · 2º RI (Zona A) |
 | Tabelionato de Notas (sede) | **3** | 1º · 2º · 3º Ofício de Notas |
 | Registro Civil das Pessoas Naturais (sede) | **1** | Serviço Registral das Pessoas Naturais – Sede |
 | Registro de Títulos e Documentos + RCPJ | **1** | 1º RTD/RCPJ |
-| Tabelionato de Protesto | **1 ativo** | 1º Protesto (2º/3º constam inativos) |
+| Tabelionato de Protesto | **1 ativo + 2 vagos** | 1º Protesto (ativo) · 2º e 3º Protesto (vagos, sem titular provido) |
 | Cartórios distritais (Notas + Registro Civil) | **4** | Cruzeiro dos Peixotos · Martinésia · Miraporanga · Tapuirama |
 
-**Total ≈ 12 serventias ativas** na comarca.
+**Total: 14 serventias** na comarca — **12 em atividade** + **2 vagas** (2º e 3º Tabelionatos de
+Protesto, oficialmente criados mas aguardando provimento por concurso). A capacidade operacional
+efetiva de protesto é prestada pelo 1º Tabelionato (item 5).
 
 ---
 
@@ -170,8 +172,22 @@ promissórias, contratos, CDA); intimações; cancelamento de protesto; certidõ
 - **Site oficial:** https://www.wrprotestos.com.br/
 - Fontes: certidaoonlinebrasil; wrprotestos.com.br; cartorio.info (CNS 05.552-5)
 
-> **2º e 3º Tabelionatos de Protesto constam como inativos/extintos.** Em operação, apenas 1
-> serventia de protesto na comarca.
+### 5.2 — 2º Tabelionato de Protesto de Títulos *(vago)*
+- **Situação:** serventia **oficialmente existente na comarca, porém vaga** — sem titular provido
+  por concurso público. Não está em operação independente: o serviço de protesto é prestado, em
+  acumulação, pelo 1º Tabelionato de Protesto (item 5.1).
+- **CNS / titular:** não há titular provido. *(situação a confirmar no CNJ Justiça Aberta e na
+  Corregedoria-Geral de Justiça do TJMG — fontes anteriores divergiam entre "vago" e "extinto")*
+
+### 5.3 — 3º Tabelionato de Protesto de Títulos *(vago)*
+- **Situação:** idem 5.2 — serventia **vaga** (sem titular provido); serviço respondido em
+  acumulação pelo 1º Tabelionato de Protesto.
+- **CNS / titular:** não há titular provido. *(confirmar no CNJ / TJMG)*
+
+> **Síntese do protesto na comarca:** existem **3 serventias de Tabelionato de Protesto**, sendo
+> **1 ativa** (1º Protesto / WR Protestos) e **2 vagas** (2º e 3º, sem titular provido e respondidas
+> em acumulação pela 1ª). Na prática, apenas 1 serventia de protesto opera de forma independente.
+> Isso compõe o total da comarca de **14 serventias = 12 ativas + 2 vagas**.
 
 ---
 
@@ -210,3 +226,6 @@ cumulativas de Notas e Registro Civil das Pessoas Naturais**. Titulares abaixo v
    sites oficiais; agregadores ainda mostram endereços antigos do Centro.
 3. **Conflitos pontuais:** nº do 1º RI (332 vs 409); endereço do 2º Notas (Machado de Assis 685 vs
    Cel. Antônio Alves Pereira 850); endereço/telefone de Miraporanga.
+4. **Status do 2º e 3º Protesto:** aqui tratados como **vagos** (serventia criada, sem titular
+   provido). Fontes anteriores os classificavam como "inativos/extintos" — confirmar no CNJ /
+   TJMG se estão *vagos* (aguardando concurso) ou efetivamente *extintos/desativados*.
