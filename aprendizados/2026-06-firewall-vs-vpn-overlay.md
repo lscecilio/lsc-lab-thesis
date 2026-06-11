@@ -54,6 +54,16 @@ está protegido; não está.
    O que já existia mas não foi verificado entra como *grandfathered* — com
    comentário — em vez de quebrar um fluxo desconhecido às cegas.
 
+6. **Defesa em profundidade: uma camada nunca basta.** O incidente só existiu
+   porque o controle de rede tinha um furo silencioso. A lição é não confiar
+   numa camada só: o que precisa atravessar a malha é fechado *também* na
+   própria aplicação/dado — a autenticação do serviço restrita ao único peer
+   que de fato consome, descoberto por evidência (quem está conectado), não
+   por suposição. Assim, se o firewall for furado de novo, a porta ainda está
+   trancada por dentro; e se a auth falhar, o firewall ainda segura. Antes de
+   apertar, prove que não quebra: identifique o consumidor real e aplique de
+   forma reversível (backup + *reload*, sem derrubar conexões).
+
 ## Por que isso importa pra tese
 
 Isto é a tese em miniatura: um detector disparou, a causa-raiz estava num
