@@ -30,6 +30,10 @@ Não vou compartilhar:
 - Código fonte
 - Detalhes de orquestração
 
+## Aprendizados que viraram regra
+
+- [O firewall do host pode estar mentindo pra você](aprendizados/2026-06-firewall-vs-vpn-overlay.md) — VPN overlay que fura o firewall do host, e por que hermeticidade exige auto-heal contínuo.
+
 ## Licença
 
 Conteúdo (texto, métricas, princípios) sob [CC BY-NC 4.0](LICENSE). Replicação técnica requer autorização escrita.
