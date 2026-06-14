@@ -42,6 +42,11 @@ E, pior que o alarme: o **loop fechado não resolveu sozinho**. Por quatro motiv
 2. **Probe de saúde tem que ser *steal-aware*.** Meça a contenção do host (CPU steal/iowait) no início
    do run; sob saturação, **escale o timeout** e **classifique como transitório de infra**.
    *Lento ≠ quebrado.* Um teto de timeout fixo transforma blip de hypervisor em falso "app caído".
+   E ao classificar, **case a *família* de assinaturas de saturação — não só a palavra "timeout"**: sob
+   contenção extrema o próprio probe falha por inanição de recurso (`ETIMEDOUT`, falha de `spawn`/fork,
+   `socket hang up`, `EAGAIN`), e isso é tão "infra" quanto um timeout HTTP. Um matcher estreito demais
+   deixa escapar justo o caso mais agudo (host tão saturado que nem forka um shell) e re-introduz o
+   falso alarme — aprendi isso na marra: a v1 do meu próprio matcher só pegava `timeout` e vazou um page.
 
 3. **Não pague humano por transitório de infra.** Alerta ruidoso treina o operador a ignorar alerta.
    Page só em falha *real* (BUG_REAL); transitório vira nota silenciosa. **Auto-resolver = recuperar
