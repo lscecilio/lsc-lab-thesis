@@ -30,6 +30,10 @@ Não vou compartilhar:
 - Código fonte
 - Detalhes de orquestração
 
+## Aprendizados que viraram regra
+
+- [QA "tudo vermelho" por causa-raiz compartilhada (CPU steal) — o loop fechado precisa de auto-heal de *infra*, não de patch por app](aprendizados/2026-06-qa-falso-positivo-steal.md)
+
 ## Licença
 
 Conteúdo (texto, métricas, princípios) sob [CC BY-NC 4.0](LICENSE). Replicação técnica requer autorização escrita.
