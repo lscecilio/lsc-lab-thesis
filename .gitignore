@@ -4,3 +4,13 @@
 node_modules/
 __pycache__/
 .venv/
+
+# Sanitization guard — generated/proprietary artifacts must NEVER land in this
+# public thesis repo. The deployable code lives on the fleet (/opt/lsc-lab/...),
+# not here. These patterns block accidental commits of secrets / internal code.
+*.py
+*.db
+*.sqlite*
+*.sql
+backup_cac_*.sql
+.ingest_staging/
